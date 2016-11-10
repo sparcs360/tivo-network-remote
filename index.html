@@ -9,10 +9,10 @@ $(document).ready(function(){
         var id =  $(this).attr('id');
         if( id.startsWith("BTN_") ) {
             var code = id.substring(4);
-            $.post("http://localhost:10001/ircode/" + code);
+            $.post("ircode/" + code);
         } else if( id.startsWith("TELEPORT_")) {
             var code = id.substring(9);
-            $.post("http://localhost:10001/teleport/" + code);
+            $.post("teleport/" + code);
         }
     });
 });
