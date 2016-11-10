@@ -1,0 +1,36 @@
+<img src="[virgin_tivo_remote] (imported)" width="957" height="371" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Lee   -->
+<area shape="circle" coords="846,159,22" href="BTN_PAUSE" />
+<area shape="poly" coords="802,98,829,130,861,129,888,96,857,78,829,80,800,97" href="BTN_PLAY" />
+<area shape="poly" coords="816,141,786,112,772,138,767,161,784,204,819,172,816,139" href="BTN_REVERSE" />
+<area shape="poly" coords="875,138,901,109,917,135,922,160,912,186,905,205,877,172,876,139" href="BTN_FORWARD" />
+<area shape="poly" coords="830,187,863,188,893,215,867,232,844,236,819,230,799,215,832,188" href="BTN_STOP" />
+<area shape="circle" coords="787,262,19" href="BTN_REPLAY" />
+<area shape="rect" coords="815,252,878,278" href="BTN_SLOW" />
+<area shape="circle" coords="903,260,18" href="BTN_ADVANCE" />
+<area shape="circle" coords="846,330,19" href="BTN_RECORD" />
+<area shape="rect" coords="736,22,773,63" href="BTN_THUMBSDOWN" />
+<area shape="rect" coords="920,22,953,67" href="BTN_THUMBSUP" />
+<area shape="rect" coords="9,5,33,29" href="BTN_CHANNELUP" />
+<area shape="rect" coords="10,63,34,87" href="BTN_CHANNELDOWN" />
+<area shape="rect" coords="75,112,106,145" href="BTN_UP" />
+<area shape="rect" coords="114,159,141,185" href="BTN_RIGHT" />
+<area shape="rect" coords="76,200,106,229" href="BTN_DOWN" />
+<area shape="rect" coords="28,160,58,186" href="BTN_LEFT" />
+<area shape="rect" coords="67,18,112,50" href="BTN_TIVO" />
+<area shape="circle" coords="147,52,20" href="BTN_LIVETV" />
+<area shape="circle" coords="201,90,18" href="BTN_INFO" />
+<area shape="circle" coords="214,149,19" href="BTN_GUIDE" />
+<area shape="poly" coords="60,249,61,270,75,282,97,282,113,267,116,249,97,255,79,254,62,249" href="BTN_SELECT" />
+<area shape="circle" coords="21,306,20" href="TELEPORT_NOWPLAYING" />
+<area shape="circle" coords="426,278,15" href="BTN_ACTION_A" />
+<area shape="circle" coords="461,277,15" href="BTN_ACTION_B" />
+<area shape="circle" coords="494,277,14" href="BTN_ACTION_C" />
+<area shape="circle" coords="527,278,14" href="BTN_ACTION_D" />
+</map>

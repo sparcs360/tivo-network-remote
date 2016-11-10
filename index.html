@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Remote</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("map[name=buttons] area").on('click', function () {
+    
+        var id =  $(this).attr('id');
+        if( id.startsWith("BTN_") ) {
+            var code = id.substring(4);
+            $.post("http://localhost:10001/ircode/" + code);
+        } else if( id.startsWith("TELEPORT_")) {
+            var code = id.substring(9);
+            $.post("http://localhost:10001/teleport/" + code);
+        }
+    });
+});
+</script>
+</head>
+<body>
+<img src="remote.png" alt="remote" usemap="#buttons" />
+<map name="buttons" id="map_buttons">
+<area shape="circle" coords="846,159,22" href="" id="BTN_PAUSE" />
+<area shape="poly" coords="802,98,829,130,861,129,888,96,857,78,829,80,800,97" href="" id="BTN_PLAY" />
+<area shape="poly" coords="816,141,786,112,772,138,767,161,784,204,819,172,816,139" href="" id="BTN_REVERSE" />
+<area shape="poly" coords="875,138,901,109,917,135,922,160,912,186,905,205,877,172,876,139" href="" id="BTN_FORWARD" />
+<area shape="poly" coords="830,187,863,188,893,215,867,232,844,236,819,230,799,215,832,188" href="" id="BTN_STOP" />
+<area shape="circle" coords="787,262,19" href="" id="BTN_REPLAY" />
+<area shape="rect" coords="815,252,878,278" href="" id="BTN_SLOW" />
+<area shape="circle" coords="903,260,18" href="" id="BTN_ADVANCE" />
+<area shape="circle" coords="846,330,19" href="" id="BTN_RECORD" />
+<area shape="rect" coords="736,22,773,63" href="" id="BTN_THUMBSDOWN" />
+<area shape="rect" coords="920,22,953,67" href="" id="BTN_THUMBSUP" />
+<area shape="rect" coords="9,5,33,29" href="" id="BTN_CHANNELUP" />
+<area shape="rect" coords="10,63,34,87" href="" id="BTN_CHANNELDOWN" />
+<area shape="rect" coords="75,112,106,145" href="" id="BTN_UP" />
+<area shape="rect" coords="114,159,141,185" href="" id="BTN_RIGHT" />
+<area shape="rect" coords="76,200,106,229" href="" id="BTN_DOWN" />
+<area shape="rect" coords="28,160,58,186" href="" id="BTN_LEFT" />
+<area shape="rect" coords="67,18,112,50" href="" id="BTN_TIVO" />
+<area shape="circle" coords="147,52,20" href="" id="BTN_LIVETV" />
+<area shape="circle" coords="201,90,18" href="" id="BTN_INFO" />
+<area shape="circle" coords="214,149,19" href="" id="BTN_GUIDE" />
+<area shape="poly" coords="60,249,61,270,75,282,97,282,113,267,116,249,97,255,79,254,62,249" href="" id="BTN_SELECT" />
+<area shape="circle" coords="21,306,20" href="" id="TELEPORT_NOWPLAYING" />
+<area shape="circle" coords="426,278,15" href="" id="BTN_ACTION_A" />
+<area shape="circle" coords="461,277,15" href="" id="BTN_ACTION_B" />
+<area shape="circle" coords="494,277,14" href="" id="BTN_ACTION_C" />
+<area shape="circle" coords="527,278,14" href="" id="BTN_ACTION_D" />
+</map>
+<body>
+</html>
