@@ -15,7 +15,10 @@ client.on('data', function(data) {
 
 // Create Web Server
 var app = express();
+var favicon = require('serve-favicon');
 var path = require('path');
+
+app.use(favicon(__dirname + '/images/favicon.ico'));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));

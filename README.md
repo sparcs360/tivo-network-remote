@@ -12,9 +12,8 @@ See [this](http://help.virginmedia.com/system/selfservice.controller?CMD=VIEW_AR
 * Clone this repository
 * Install required node modules (run this from the local repo directory)
 ```
-npm install --global express net
+npm install express net serve-favicon
 ```
-  * Omit the ```--global``` argument to install the modules locally
 
 # Run
 
@@ -30,7 +29,7 @@ I'm using **PM2** (http://pm2.keymetrics.io/) to run the web application as a se
 
 See the getting started guide (http://pm2.keymetrics.io/docs/usage/quick-start/)
 
-* Start with ```pm2 start tivo-network-remote.js --name remote -i remote```
+* Start with `pm2 start tivo-network-remote.js --name remote -i 1`
 * Make sure the web application is working ok
 * Save the configuration with ```pm2 save``` so that the application is automatically started after a reboot
 
